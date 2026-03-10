@@ -1,7 +1,0 @@
-syntax = "proto3";
-package caretta_id;
-
-// Quadruple size Caretta ID message (Deprecated)
-message CarettaIdQ {
-    uint64 value = 1;
-}
