@@ -1,7 +1,7 @@
-# caretta-id-proto
+# grain-id-proto
 
-Protobuf definitions for caretta-id messages.
-For Rust implementation and usage examples, see https://github.com/fluo10/caretta-id
+Protobuf definitions for grain-id messages.
+For Rust implementation and usage examples, see https://github.com/fluo10/grain-id
 
 ## Usage
 
@@ -10,7 +10,7 @@ For Rust implementation and usage examples, see https://github.com/fluo10/carett
 Add this repository to your project.
 
 ```bash
-git submodule add https://github.com/fluo10/caretta-id-proto
+git submodule add https://github.com/fluo10/grain-id-proto
 ```
 
 ### Import
@@ -21,10 +21,10 @@ Import and define new message.
 syntax = "proto3";
 package foo;
 
-import "caretta_id/caretta_id_d.proto";
+import "grain_id/grain_id.proto";
 
 message Bar {
-    caretta_id.CarettaIdD id = 1;
+    grain_id.grainId id = 1;
 }
 ```
 
@@ -33,7 +33,7 @@ message Bar {
 You must specify the added directory using the `--proto_path` option during compilation.
 
 ```bash
-protoc --proto_path=caretta-id-proto --python_out=BUILD_DIR foo/bar.proto
+protoc --proto_path=grain-id-proto --python_out=BUILD_DIR foo/bar.proto
 ```
 
 ## License
