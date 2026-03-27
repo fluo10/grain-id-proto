@@ -1,7 +1,0 @@
-syntax = "proto3";
-package caretta_id;
-
-// Caretta ID message
-message CarettaId {
-    uint64 value = 1;
-}

@@ -1,0 +1,7 @@
+syntax = "proto3";
+package grain_id;
+
+// Grain ID message
+message GrainId {
+    uint64 value = 1;
+}
