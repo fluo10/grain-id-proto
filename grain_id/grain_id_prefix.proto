@@ -1,0 +1,13 @@
+syntax = "proto3";
+package grain_id;
+
+// Grain ID prefix for range-based filtering.
+//
+// Represents a string prefix of a GrainId, used to compute the inclusive
+// numeric range [min, max] of all GrainIds that start with the given prefix.
+message GrainIdPrefix {
+    // The prefix value stored in the high bits (same encoding as GrainId).
+    uint64 value = 1;
+    // Number of prefix characters (0-7).
+    uint32 len = 2;
+}
